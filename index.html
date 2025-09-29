@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giacomo - Data Science & Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Giacomo</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link cv-btn" onclick="downloadCV()">
+                        <i class="fas fa-download"></i> CV
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Giacomo</span>
+            </h1>
+            <h2 class="hero-subtitle">Data Science & Engineering Student</h2>
+            <p class="hero-description">
+                Passionate about transforming data into actionable insights and building scalable data solutions. 
+                Currently pursuing my studies in data science and engineering.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-placeholder">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated data science and data engineering student with a passion for uncovering 
+                        insights from complex datasets and building robust data pipelines. My journey in data 
+                        science has equipped me with strong analytical skills and a deep understanding of 
+                        statistical methods and machine learning algorithms.
+                    </p>
+                    <p>
+                        I enjoy working on challenging problems that require both technical expertise and 
+                        creative thinking. Whether it's developing predictive models, designing data 
+                        architectures, or creating visualizations that tell compelling stories, I'm always 
+                        eager to learn and apply new technologies.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Data Science & Engineering Student</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Focus Areas</h4>
+                                <p>Machine Learning, Data Engineering, Analytics</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Interests</h4>
+                                <p>AI, Big Data, Statistical Modeling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                    
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Domain Adaptation in Semantic Segmentation</h3>
+                        <p>I implemented the domain adaptation technique through adversarial training to improve segmentation performance on unseen domains.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Adversarial Training</span>
+                            <span class="tech-tag">Semantic Segmentation</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/elisabettaroviera/MLDL-Project" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Research Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Engineering</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-star"></i>
+                            <span>Apache Spark</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Hadoop</span>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:">y</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/giacomo-maino/" target="_blank">linkedin.com/in/giacomo-maino</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/GiacomoMaino" target="_blank">github.com/GiacomoMaino</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Giacomo. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/GiacomoMaino" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/giacomo-maino/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
